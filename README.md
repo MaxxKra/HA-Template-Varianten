@@ -166,4 +166,31 @@ sensor:
 Eine relativ neue Variante im Jahr 2024 ist es, Templates in den Helfern anzulegen.
 
 
-Dazu gehe in den <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Einstellungen.jpg" alt="Icon" height="30"/>
+Dazu gehe in den <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Einstellungen.jpg" alt="Icon" height="30"/> auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Gerate_und_Dienste.jpg" alt="Icon" height="30"/> und dann oben auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Helfer.jpg" alt="Icon" height="30"/>.
+
+
+Dann klicke rechts unten auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Helfer_Erstellen.jpg" alt="Icon" height="30"/>.
+
+
+Nun sollte folgende Fenster angezeigt werden, in welchen die rot umrandeten Bereiche ausgewählt werden.
+
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA FENSTER/Helfer_Template.jpg" alt="Icon" width="600"/>
+
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA FENSTER/Template_fur_einen_Sensor.jpg" alt="Icon" width="600"/>
+
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA FENSTER/Zahler_Lights_gesamt.jpg" alt="Icon" width="600"/>
+
+
+Dieser Code wird im Feld `Zustandstemplate` eingetragen:
+
+
+```yaml
+{{ states.light 
+  | rejectattr('attributes.entity_id', 'defined')
+  | selectattr('state', 'eq', 'on') 
+  | list 
+  | count }}
+
