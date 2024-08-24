@@ -30,8 +30,7 @@ sensor:
             | rejectattr('attributes.entity_id', 'defined')
             | selectattr('state', 'eq', 'on') 
             | list 
-            | count 
-          }}
+            | count }}
   - platform: template
     sensors:
       zahler_schalter_gesamt:
@@ -42,8 +41,7 @@ sensor:
             | rejectattr('attributes.entity_id', 'defined')
             | selectattr('state', 'eq', 'on') 
             | list 
-            | count 
-          }}
+            | count }}
 ```
 
 
@@ -69,8 +67,7 @@ template:
           | rejectattr('attributes.entity_id', 'defined')
           | selectattr('state', 'eq', 'on') 
           | list 
-          | count 
-        }}
+          | count }}
     - name: Zähler Schalter gesamt
       unique_id: "zahler_schalter_gesamt"
       state: >
@@ -78,8 +75,7 @@ template:
           | rejectattr('attributes.entity_id', 'defined')
           | selectattr('state', 'eq', 'on') 
           | list 
-          | count 
-        }}
+          | count }}
 ```
 
 
@@ -109,8 +105,7 @@ Nun kann im `template.yaml`-File der Code für die Template-Sensoren eingetragen
           | rejectattr('attributes.entity_id', 'defined')
           | selectattr('state', 'eq', 'on') 
           | list 
-          | count 
-      }}
+          | count }}
   - name: Zähler Schalter gesamt
       unique_id: "zahler_schalter_gesamt"
       state: >
@@ -118,8 +113,7 @@ Nun kann im `template.yaml`-File der Code für die Template-Sensoren eingetragen
           | rejectattr('attributes.entity_id', 'defined')
           | selectattr('state', 'eq', 'on') 
           | list 
-          | count 
-      }}
+          | count }}
 ```
 
 
