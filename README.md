@@ -190,10 +190,10 @@ sensor:
 Eine relativ neue Variante im Jahr 2024 ist es, Templates in den Helfern anzulegen.
 
 
-Dazu gehe in den <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Einstellungen.jpg" alt="Icon" height="30"/> auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Gerate_und_Dienste.jpg" alt="Icon" height="30"/> und dann oben auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Helfer.jpg" alt="Icon" height="30"/>.
+Dazu gehe in den <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Einstellungen.jpg" alt="Icon" height="40"/> auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Gerate_und_Dienste.jpg" alt="Icon" height="40"/> und dann oben auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Helfer.jpg" alt="Icon" height="40"/>.
 
 
-Dann klicke rechts unten auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Helfer_Erstellen.jpg" alt="Icon" height="30"/>.
+Dann klicke rechts unten auf <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Helfer_Erstellen.jpg" alt="Icon" height="40"/>.
 
 
 Nun sollte folgende Fenster angezeigt werden, in welchen die rot umrandeten Bereiche ausgewählt werden.
