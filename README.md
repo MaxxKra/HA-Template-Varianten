@@ -227,3 +227,6 @@ Nach dem Bestätigen ist es am Besten, den Browser zu aktualisiern und der Templ
 
 
 Wenn bei den mit YAML Code eingetragenen Template-Sensoren eine `uniqu_id` angegeben wird, werden diese Template-Sensoren auch in den Helfern angezeigt und können zur Kategorie-Zuweisung und für Labels bearbeitet werden. Dies mach ein Suche im späteren Verlauf viel einfacher.
+
+
+<img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA FENSTER/Zahler_Lights_gesamt_Labels.jpg" alt="Icon" width="600"/>
