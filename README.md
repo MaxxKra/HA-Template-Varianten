@@ -159,3 +159,11 @@ sensor:
       | count }}
 ```
 
+
+## :five: Template - Sensor, in den Helfern angelegt
+
+
+Eine relativ neue Variante im Jahr 2024 ist es, Templates in den Helfern anzulegen.
+
+
+Dazu gehe in den <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/HA ICONS/Einstellungen.jpg" alt="Icon" height="20"/>
