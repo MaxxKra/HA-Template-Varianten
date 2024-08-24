@@ -6,6 +6,30 @@ Es gibt verschiedene Möglichkeiten, Template-Sensoren in Home Assistant anzuleg
 In diesem Beispiel werde ich zwei Templates zur Zählung von aktiven `light` und `switch` Entitäten anlegen.
 
 
+<br>
+
+
+### <p align="center">Wenn du Interesse daran hast, mich, meinen Kanal oder meine kreative Arbeit zu unterstützen,<br>freue ich mich über jeglichen Support:
+</p>
+<p align="center">
+  <a href="https://www.buymeacoffee.com/bastler">
+    <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/buy_me_a_coffee_logo.png" alt="Buy Me A Coffee" width="150">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.paypal.me/kramlmaxx">
+    <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/paypal_donate_logo.png" alt="PayPal Donate" width="150">
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.amazon.de/hz/wishlist/ls/3FT7MNGRVOTM3?ref_=wl_share">
+    <img src="https://raw.githubusercontent.com/MaxxKra/README_images/master/Allgemein/amazon_wishlist_logo.png" alt="Amazon Wishlist" width="150">
+  </a>
+</p>
+
+### <p align="center">Danke</p>
+
+<br>
+
+
 ## :one: In `configuration.yaml` mit `platform: template`
 
 
@@ -193,4 +217,13 @@ Dieser Code wird im Feld `Zustandstemplate` eingetragen:
   | selectattr('state', 'eq', 'on') 
   | list 
   | count }}
+```
 
+
+Nach dem Bestätigen ist es am Besten, den Browser zu aktualisiern und der Template-Sensor ist angelegt und sollte Werte liefern.
+
+
+## :six: Allgemeine Infos zum Schluss
+
+
+Wenn bei den mit YAML Code eingetragenen Template-Sensoren eine `uniqu_id` angegeben wird, werden diese Template-Sensoren auch in den Helfern angezeigt und können zur Kategorie-Zuweisung und für Labels bearbeitet werden. Dies mach ein Suche im späteren Verlauf viel einfacher.
