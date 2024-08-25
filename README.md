@@ -220,6 +220,15 @@ Dieser Code wird im Feld `Zustandstemplate` eingetragen:
 ```
 
 
+```yaml
+{{ states.switch 
+  | rejectattr('attributes.entity_id', 'defined')
+  | selectattr('state', 'eq', 'on') 
+  | list 
+  | count }}
+```
+
+
 Nach dem Bestätigen ist es am Besten, den Browser zu aktualisiern und der Template-Sensor ist angelegt und sollte Werte liefern.
 
 
