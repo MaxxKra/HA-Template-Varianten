@@ -6,7 +6,7 @@ Es gibt verschiedene Möglichkeiten, Template-Sensoren in Home Assistant anzuleg
 In dieser Beschreibung behandle ich folgende Varianten:
 
 
-1. In `configuration.yaml` mit `platform: template`
+1. [In `configuration.yaml` mit `platform: template`](/README.md#one-in-configurationyaml-mit-platform-template)
 2. In `configuration.yaml` als `template:`
 3. In `template.yaml` File als `sensor:`
 4. In `template` Folder als `Aktive Entitäten Zähler.yaml` File mit `sensor:`
