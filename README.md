@@ -3,7 +3,17 @@
 Es gibt verschiedene Möglichkeiten, Template-Sensoren in Home Assistant anzulegen. Jede Variante hat ihre Berechtigung sowie Vor- und Nachteile.
 
 
-In diesem Beispiel werde ich zwei Templates zur Zählung von aktiven `light` und `switch` Entitäten anlegen.
+In dieser Beschreibung behandle ich folgende Varianten:
+
+
+1. In `configuration.yaml` mit `platform: template`
+2. In `configuration.yaml` als `template:`
+3. In `template.yaml` File als `sensor:`
+4. In `template` Folder als `Aktive Entitäten Zähler.yaml` File mit `sensor:`
+5. Als Template - Sensor, in den Helfern angelegt
+
+
+Als Beispiel werde ich in jeder der Varianten, zwei Templates zur Zählung von aktiven `light` und `switch` Entitäten anlegen.
 
 
 <br>
@@ -141,7 +151,7 @@ Nun kann im `template.yaml`-File der Code für die Template-Sensoren eingetragen
 ```
 
 
-## :four: In `template` Folder als `Aktiv_Entity_Count.yaml` File mit `sensor:`
+## :four: In `template` Folder als `Aktive Entitäten Zähler.yaml` File mit `sensor:`
 
 
 Eine andere Möglichkeit, die Templates auszulagern, ist das Anlegen eines eigenen Folders (Ordners), z.B. `template`, unter dem Verzeichnis `config`. In diesem Ordner können nun eigene Files (Dateien) für die Templates angelegt werden. Der Name dieser Dateien kann individuell sein und sogar Leerzeichen und Umlaute enthalten. Wichtig ist, dass der Name mit der Endung `.yaml` versehen wird. Der Vorteil dieser Variante ist die Übersichtlichkeit, da man im Template-Ordner die angelegten Dateien schnell finden kann und nicht mühsam alle Einträge in einer einzigen Datei durchsuchen muss.
