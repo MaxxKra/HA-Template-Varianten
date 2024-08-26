@@ -7,10 +7,10 @@ In dieser Beschreibung behandle ich folgende Varianten:
 
 
 1. [In `configuration.yaml` mit `platform: template`](/README.md#one-in-configurationyaml-mit-platform-template)
-2. In `configuration.yaml` als `template:`
-3. In `template.yaml` File als `sensor:`
-4. In `template` Folder als `Aktive Entitäten Zähler.yaml` File mit `sensor:`
-5. Als Template - Sensor, in den Helfern angelegt
+2. [In `configuration.yaml` als `template:`](/README.md#two-in-configurationyaml-als-template)
+3. [In `template.yaml` File als `sensor:`](/README.md#three-in-templateyaml-file-als-sensor)
+4. [In `template` Folder als `Aktive Entitäten Zähler.yaml` File mit `sensor:`](/README.md#four-in-template-folder-als-aktive-entit%C3%A4ten-z%C3%A4hleryaml-file-mit-sensor)
+5. [Als Template - Sensor, in den Helfern angelegt](/README.md#five-template---sensor-in-den-helfern-angelegt)
 
 
 Als Beispiel werde ich in jeder der Varianten, zwei Templates zur Zählung von aktiven `light` und `switch` Entitäten anlegen.
