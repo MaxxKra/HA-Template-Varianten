@@ -133,16 +133,16 @@ Nun kann im `template.yaml`-File der Code für die Template-Sensoren eingetragen
 #-----------------------------------------------------------
 - sensor:
   - name: Zähler Lights gesamt
-      unique_id: "zahler_lights_gesamt"
-      state: >
+    unique_id: zahler_lights_gesamt
+    state: >
       {{ states.light 
-          | rejectattr('attributes.entity_id', 'defined')
-          | selectattr('state', 'eq', 'on') 
-          | list 
-          | count }}
+        | rejectattr('attributes.entity_id', 'defined')
+        | selectattr('state', 'eq', 'on') 
+        | list 
+        | count }}
   - name: Zähler Schalter gesamt
-      unique_id: "zahler_schalter_gesamt"
-      state: >
+    unique_id: zahler_schalter_gesamt
+    state: >
       {{ states.switch
           | rejectattr('attributes.entity_id', 'defined')
           | selectattr('state', 'eq', 'on') 
