@@ -165,7 +165,7 @@ template: !include_dir_list template
 ```
 
 
-Im Falle der Beispiel-Templates lautet das File im Template-Folder `Aktiv_Entity_Count.yaml` und der eingetragene Code sieht wie folgt aus:
+Im Falle der Beispiel-Templates lautet das File im Template-Folder `Aktive Entitäten Zähler.yaml` und der eingetragene Code sieht wie folgt aus:
 
 
 ```yaml
