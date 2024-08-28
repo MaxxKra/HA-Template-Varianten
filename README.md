@@ -173,24 +173,24 @@ Im Falle der Beispiel-Templates lautet das File im Template-Folder `Aktiv_Entity
 # Template - Sensor, eingetragen in Template Folder
 #-----------------------------------------------------------
 sensor:
-  - name: "Zähler Lights gesamt"
-    unique_id: zahler_lights_gesamt
-    icon: mdi:lightbulb-question-outline
-    state: >
-      {{ states.light 
-      | rejectattr('attributes.entity_id', 'defined')
-      | selectattr('state', 'eq', 'on') 
-      | list 
-      | count }}
-  - name: "Zähler Schalter gesamt"
-    unique_id: zahler_schalter_gesamt
-    icon: mdi:help-network-outline
-    state: >
-      {{ states.switch 
-      | rejectattr('attributes.entity_id', 'defined') 
-      | selectattr('state', 'eq', 'on') 
-      | list 
-      | count }}
+- name: "Zähler Lights gesamt"
+  unique_id: zahler_lights_gesamt
+  icon: mdi:lightbulb-question-outline
+  state: >
+    {{ states.light 
+    | rejectattr('attributes.entity_id', 'defined')
+    | selectattr('state', 'eq', 'on') 
+    | list 
+    | count }}
+- name: "Zähler Schalter gesamt"
+  unique_id: zahler_schalter_gesamt
+  icon: mdi:help-network-outline
+  state: >
+    {{ states.switch 
+    | rejectattr('attributes.entity_id', 'defined') 
+    | selectattr('state', 'eq', 'on') 
+    | list 
+    | count }}
 ```
 
 
